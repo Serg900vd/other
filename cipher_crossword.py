@@ -6,7 +6,7 @@ class CipherCrossword:
     def __init__(self, crossword, words: list):
         self.crossword = crossword
         self.words = words
-        self._cross_keys = {}  # Набор ключей который формируется в _is_cross_keys и  _find_letters_cods
+        self._cross_keys = {}  # Набор ключей который формируется в _is_cross_keys() и  _find_letters_cods() используется в _decoder()
         self._t_crossword = list(zip(*self.crossword))
 
     def _reset_cross_keys(self):
